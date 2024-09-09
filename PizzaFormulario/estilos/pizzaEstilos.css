@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: black;
+}
+
+#container-background {
+    height: 96vh;
+    background-image: url(./pizalogo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 83%;
+}
+
+#navbar-color {
+    background-color: rgba(15, 21, 105, 0.5);
+}
+
+.navbar-brand {
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#menu {
+    background-color: rgba(225, 187, 0);
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+#logo-color {
+    color: rgba(225, 187, 0);
+}
+
+.navbar-nav {
+    margin-left: 60px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#a {
+    color: rgba(225, 187, 0);
+}
+
+.nav-item a {
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.navbar-nav a:hover {
+    color: rgba(225, 187, 0);
+}
+
+.main-content {
+    color: white;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 160px;
+}
+
+.main-content h1 {
+    font-size: 50px;
+}
+
+.main-content h2 {
+    font-size: 50px;
+}
+
+.btn1 button {
+    width: 120px;
+    height: 30px;
+    background-color: rgba(225, 187, 0);
+    font-weight: bold;
+    border: none;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn1 button:hover {
+    background-color: rgba(225, 187, 0);
+    box-sizing: 0 0 5px #ffc000,
+        0 0 20px #ffc000,
+        0 0 60px #ffc000,
+        0 0 150px #ffc000;
+}
