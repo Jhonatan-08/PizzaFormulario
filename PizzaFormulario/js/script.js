@@ -42,6 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("address", address);
 
     container.classList.remove("active");
+
+    alert(
+      "¡Tu pedido fue realizado con éxito! Por favor revisa tu WhatsApp donde estará el detalle del pedido"
+    );
   });
 
   // Guardar datos del formulario personal
