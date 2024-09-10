@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Website</title>
+    <title>¡Pizza Ya!</title>
+    <link rel="icon" type="iconTitle" href="img/pizalogo.png">
     <!-- for icons  -->
     <link
       rel="stylesheet"
@@ -55,9 +56,9 @@
                     <i class="uil uil-search"></i>
                   </button>
                 </form>
-                <a href="javascript:void(0)" class="header-btn header-cart">
+                <a href="index.html" class="header-btn header-cart">
                   <i class="uil uil-shopping-bag"></i>
-                  <span class="cart-number">3</span>
+                  <span class="cart-number">0</span>
                 </a>
                 <a href="javascript:void(0)" class="header-btn">
                   <i class="uil uil-user-md"></i>
@@ -69,6 +70,17 @@
       </div>
     </header>
     <!-- header ends  -->
+
+    <!-- Ventana Flotante para el Carrito -->
+    <div id="cartModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Tu Carrito</h2>
+        <div id="cart-items"></div>
+        <button id="checkout-button">Finalizar Compra</button>
+        <button id="go-to-index">Volver al Inicio</button>
+      </div>
+    </div>
 
     <div id="viewport">
       <div id="js-scroll-content">
@@ -168,7 +180,9 @@
                   <div class="sec-title text-center mb-5">
                     <p class="sec-sub-title mb-3">menu</p>
                     <h2 class="h2-title">
-                        <span>La pizza no te pide nada, solo que la disfrutes</span>
+                      <span
+                        >La pizza no te pide nada, solo que la disfrutes</span
+                      >
                     </h2>
                     <div class="sec-title-shape mb-4">
                       <img src="assets/images/title-shape.svg" alt="" />
@@ -191,15 +205,15 @@
                         </li>
                         <li class="filter" data-filter=".breakfast">
                           <img src="assets/images/menu-2.png" alt="" />
-                          Pizzas
+                          menu 1
                         </li>
                         <li class="filter" data-filter=".lunch">
                           <img src="assets/images/menu-3.png" alt="" />
-                          Lunch
+                          menu 2
                         </li>
                         <li class="filter" data-filter=".dinner">
                           <img src="assets/images/menu-4.png" alt="" />
-                          Dinner
+                          Menu 3
                         </li>
                       </ul>
                     </div>
@@ -242,7 +256,12 @@
                             <b>$ 25.000</b>
                           </li>
                           <li>
-                            <button class="dish-add-btn">
+                            <!-- Añadir un data-attribute a cada botón de agregar -->
+                            <button
+                              class="dish-add-btn"
+                              data-name="Pizza Vegetariana"
+                              data-price="25000"
+                            >
                               <i class="uil uil-plus"></i>
                             </button>
                           </li>
@@ -286,7 +305,12 @@
                             <b>$ 28.000</b>
                           </li>
                           <li>
-                            <button class="dish-add-btn">
+                            <!-- Añadir un data-attribute a cada botón de agregar -->
+                            <button
+                              class="dish-add-btn"
+                              data-name="Mexicana"
+                              data-price="28000"
+                            >
                               <i class="uil uil-plus"></i>
                             </button>
                           </li>
@@ -294,6 +318,7 @@
                       </div>
                     </div>
                   </div>
+
                   <!-- 3 -->
                   <div
                     class="col-lg-4 col-sm-6 dish-box-wp lunch"
@@ -329,7 +354,12 @@
                             <b>$25.000</b>
                           </li>
                           <li>
-                            <button class="dish-add-btn">
+                            <!-- Añadir un data-attribute a cada botón de agregar -->
+                            <button
+                              class="dish-add-btn"
+                              data-name="Hawaiana"
+                              data-price="25000"
+                            >
                               <i class="uil uil-plus"></i>
                             </button>
                           </li>
@@ -373,7 +403,12 @@
                             <b>$25.000</b>
                           </li>
                           <li>
-                            <button class="dish-add-btn">
+                            <!-- Añadir un data-attribute a cada botón de agregar -->
+                            <button
+                              class="dish-add-btn"
+                              data-name="Napolitana"
+                              data-price="25000"
+                            >
                               <i class="uil uil-plus"></i>
                             </button>
                           </li>
@@ -417,7 +452,12 @@
                             <b>$ 20.000</b>
                           </li>
                           <li>
-                            <button class="dish-add-btn">
+                            <!-- Añadir un data-attribute a cada botón de agregar -->
+                            <button
+                              class="dish-add-btn"
+                              data-name="Pollo con champiñon"
+                              data-price="20000"
+                            >
                               <i class="uil uil-plus"></i>
                             </button>
                           </li>
@@ -425,6 +465,7 @@
                       </div>
                     </div>
                   </div>
+
                   <!-- 6 -->
                   <div
                     class="col-lg-4 col-sm-6 dish-box-wp dinner"
@@ -460,7 +501,12 @@
                             <b>$30.000</b>
                           </li>
                           <li>
-                            <button class="dish-add-btn">
+                            <!-- Añadir un data-attribute a cada botón de agregar -->
+                            <button
+                              class="dish-add-btn"
+                              data-name="Carnes"
+                              data-price="30000"
+                            >
                               <i class="uil uil-plus"></i>
                             </button>
                           </li>
@@ -749,5 +795,6 @@
     <script src="assets/js/smooth-scroll.js"></script>
     <!-- custom js  -->
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
